@@ -8998,15 +8998,21 @@ h1, h2, h3, h4, h5,
         background: transparent;
         display: none; } }
 
-.panel-body
-{
-  padding: 15px;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
-
-
-
+.wpcf7-form-control-wrap{
+  display: block;
+  height: 30px !important;
+  background: #fff !important;
+  color: #000000 !important;
+  font-size: 14px;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 0px solid rgba(0, 0, 0, 0.1); 
+  margin-top: .1em;
+  margin-bottom: .1em;
+  margin-left: 1em;
+  margin-right: .1em;
+} 
 .form-control {
   display: block;
   height: 52px !important;
