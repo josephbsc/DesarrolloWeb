@@ -9059,7 +9059,7 @@ h1, h2, h3, h4, h5,
 .himno{
   width:     30%;
   Word-wrap: break-Word;
-  text-align: justify;
+  text-align: center;
 }
 
 .form-control {
