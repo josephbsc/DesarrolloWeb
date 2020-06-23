@@ -9042,15 +9042,15 @@ h1, h2, h3, h4, h5,
 .wpcf7-form-control{
   display: inline-block;
   height: 30px !important;
-  background: #f7fcfc !important;
+  background: #ffffff !important;
   color: #af7217 !important;
   font-size: 14px;
   font-weight:normal;
   border-radius: 0px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 1px solid rgba(247, 151, 25, 0.1); 
-  margin-top: .1em;
+  border: 1px solid rgba(12, 12, 12, 0.1); 
+  margin-top: .3em;
   margin-bottom: .1em;
   margin-left: 1em;
   margin-right: .1em;
