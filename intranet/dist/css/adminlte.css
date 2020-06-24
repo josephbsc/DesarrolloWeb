@@ -12050,7 +12050,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 
 [class*='sidebar-dark-'] .user-panel .status {
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: #ffffff;
 }
 
 [class*='sidebar-dark-'] .user-panel .status:hover, [class*='sidebar-dark-'] .user-panel .status:focus, [class*='sidebar-dark-'] .user-panel .status:active {
