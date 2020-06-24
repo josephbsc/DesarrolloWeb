@@ -41,10 +41,26 @@
         </li>
       </ul>
 
-
+  
 
       <!-- Right navbar links -->
-
+      <ul class="navbar-nav ml-auto">
+        
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="fa fa-power-off"></i>
+            <span class="badge badge-warning navbar-badge"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          
+            <div class="dropdown-divider"></div>
+            <a href="../login.html" class="dropdown-item dropdown-footer">Cerrar Sesion</a>
+          </div>
+        </li>
+       
+      </ul>
+    </nav>
 
     </nav>
     <!-- /.navbar -->
@@ -52,10 +68,9 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="index3.html" class="brand-link">
-        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-          style="opacity: .8">
-        <span class="brand-text font-weight-light">GALÁPAGOS ACADEMY</span>
+      <a href="index.html" class="brand-link" style="text-align: center;">
+  <img src="dist/img/Logo.png" alt="AdminLTE Logo" width="50" height="50" >
+        <span class="brand-text font-weight-light"></span>
       </a>
 
       <!-- Sidebar -->
@@ -253,7 +268,7 @@
             </li>
             <li class="nav-header">GESTIÓN</li>
             <li class="nav-item">
-              <a href="pages/calendar.html" class="nav-link">
+              <a href="./calendar.html" class="nav-link">
                 <i class="nav-icon far fa-calendar-alt"></i>
                 <p>
                   Calendario
@@ -282,31 +297,31 @@
 
                 </li>
                 <li class="nav-item">
-                  <a href="pages/examples/projects.html" class="nav-link">
+                  <a href="./managers.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Directores</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/examples/project-add.html" class="nav-link">
+                  <a href="./administrators.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Administradores</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/examples/project-edit.html" class="nav-link">
+                  <a href="./teachers.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Docentes </p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/examples/projects.html" class="nav-link">
+                  <a href="student.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Estudiantes</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/examples/project-add.html" class="nav-link">
+                  <a href="./representative.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Representantes</p>
                   </a>
@@ -659,7 +674,7 @@
 
               </ul>
             </li>
-
+            
             <li class="nav-item has-treeview">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-book"></i>
@@ -1176,6 +1191,7 @@
             </li>
           </ul>
         </nav>
+
         <!-- /.sidebar-menu -->
       </div>
       <!-- /.sidebar -->
@@ -1192,8 +1208,8 @@
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">SALIR</a></li>
-
+               
+                
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -1262,14 +1278,18 @@
                 <div class="icon">
                   <i class="ion ion-pie-graph"></i>
                 </div>
-                <a href="#" class="small-box-footer">Leer más <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="#" class="small-box-footer">Leer más  <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
+           
+            
             <!-- ./col -->
-          </div>
+          </div>  
           <!-- /.row -->
           <!-- Main row -->
-
+          <br><br>
+          <br><br>
+          <div style="text-align: center;"><img src="../images/portada.png" style="width: 400px;"  ></div>
           <!-- /.row (main row) -->
         </div><!-- /.container-fluid -->
       </section>
@@ -1277,8 +1297,7 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-      <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-      All rights reserved.
+      
       <div class="float-right d-none d-sm-inline-block">
         <b>Version</b> 3.0.5
       </div>
