@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>GALÁPAGOS ACADEMY</title>
+  <link rel="icon" href="../images/Logo.png" type="image/png" />
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -209,7 +210,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="pages/examples/project-edit.html" class="nav-link">
+                    <a href="#" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Tareas</p>
                     </a>
@@ -247,13 +248,13 @@
                   <li class="nav-item">
                   </li>
                   <li class="nav-item">
-                    <a href="pages/examples/projects.html" class="nav-link">
+                    <a href="#" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>uno</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="pages/examples/project-add.html" class="nav-link">
+                    <a href="#" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>dos</p>
                     </a>
@@ -276,19 +277,19 @@
                   <li class="nav-item">
                   </li>
                   <li class="nav-item">
-                    <a href="pages/examples/projects.html" class="nav-link">
+                    <a href="#" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>uno</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="pages/examples/project-add.html" class="nav-link">
+                    <a href="#" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>dos</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="pages/examples/project-edit.html" class="nav-link">
+                    <a href="#" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>tres</p>
                     </a>
@@ -315,104 +316,77 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-12">
-              <h1 class="m-0 text-dark">Privilegios</h1>
-              
-              <button type="button" onclick="location.href='./privileges_insert.html'" class="btn btn-info">Añadir</button>
-             
-              <!-- PEGAR TABLA -->
-              <div class="card-body p-0">
-                <table class="table table-striped projects">
-                  <thead>
-                    <tr>
-                      <th>
-                        #
-                      </th>
-                      <th>
-                        Nombre
-                      </th>
-                      <th>
-                        Descripción
-                      </th>
-                      <th>
-                      </th>
+              <h1 class="m-0 text-dark">Editar Privilegio</h1>
+<!-- PEGAR TABLA -->
+<form method="post" action="">
+    
+    <div class="box-body">
+        <div class="form-group">
+            <label>Nombre del Privilegio</label>
+            <input type="text" class="form-control" name="name" required="" value="">
+            <div class="text-danger"></div>
+        </div>
+
+    <div class="form-group">
+            <label>Descripcion </label>
+            <input type="text" class="form-control" name="descripcion" required="" value="">
+            <div class="text-danger"></div>
+        </div>    
+
+        
+
+        
+        
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr class="active">
+                        <th width="3%">No.</th><th width="60%">Nombre del Modulo</th><th>&nbsp;</th><th>Visible</th><th>Añadir</th><th>Ver</th><th>Modificar</th><th>Eliminar</th>
                     </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        1
-                      </td>
-                      <td>
-                        <a>
-                          superUsuario
-                        </a>
-                      </td>
-                      <td>
-                        <a>
-                          Maneja todas las secciones del sistema
-                        </a>
-                      </td>
-                      
-                        <td class="project-actions text-right">
-                        <a class="btn btn-primary btn-sm" href="./privileges_view.html">
-                          <i class="fas fa-folder">
-                          </i>
-                          Ver
-                        </a>
-                        <a class="btn btn-info btn-sm" href="./privileges_edit.html">
-                          <i class="fas fa-pencil-alt">
-                          </i>
-                          Editar
-                        </a>
-                        <a class="btn btn-danger btn-sm" href="#">
-                          <i class="fas fa-trash">
-                          </i>
-                          Eliminar
-                        </a>
-                      </td>
+                    <tr class="info">
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                        <td align="center"><input title="Check all vertical" type="checkbox" id="is_visible"></td>
+                        <td align="center"><input title="Check all vertical" type="checkbox" id="is_create"></td>
+                        <td align="center"><input title="Check all vertical" type="checkbox" id="is_read"></td>
+                        <td align="center"><input title="Check all vertical" type="checkbox" id="is_edit"></td>
+                        <td align="center"><input title="Check all vertical" type="checkbox" id="is_delete"></td>
                     </tr>
-
-
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        2
-                      </td>
-                      <td>
-                        <a>
-                          administrador
-                        </a>
-                      </td>
-                      <td>
-                        <a>
-                          Tiene ciertas areas, descritas en el documento de especificacion de requisitos. etc
-                        </a>
-                      </td>
-                      
-                        <td class="project-actions text-right">
-                        <a class="btn btn-primary btn-sm" href="./privileges_view.html">
-                          <i class="fas fa-folder">
-                          </i>
-                          Ver
-                        </a>
-                        <a class="btn btn-info btn-sm" href="./privileges_edit.html">
-                          <i class="fas fa-pencil-alt">
-                          </i>
-                          Editar
-                        </a>
-                        <a class="btn btn-danger btn-sm" href="#">
-                          <i class="fas fa-trash">
-                          </i>
-                          Eliminar
-                        </a>
-                      </td>
+                </thead>
+                <tbody>
+                                                                                                                    <tr>
+                        <td>1</td>
+                        <td>Gestion de Usuarios</td>
+                        <td class="info" align="center"><input type="checkbox" title="Check All Horizontal" class="select_horizontal"></td>
+                        <td class="active" align="center"><input type="checkbox" class="is_visible" name="privileges[24][is_visible]" value="1"></td>
+                        <td class="warning" align="center"><input type="checkbox" class="is_create" name="privileges[24][is_create]" value="1"></td>
+                        <td class="info" align="center"><input type="checkbox" class="is_read" name="privileges[24][is_read]" value="1"></td>									
+                        <td class="success" align="center"><input type="checkbox" class="is_edit" name="privileges[24][is_edit]" value="1"></td>
+                        <td class="danger" align="center"><input type="checkbox" class="is_delete" name="privileges[24][is_delete]" value="1"></td>
                     </tr>
-                  </tbody>
-                </table>
-              </div>
+                                                                                    <tr>
+                        <td>2</td>
+                        <td>Gestion de Infraestructura</td>
+                        <td class="info" align="center"><input type="checkbox" title="Check All Horizontal" class="select_horizontal"></td>
+                        <td class="active" align="center"><input type="checkbox" class="is_visible" name="privileges[29][is_visible]" value="1"></td>
+                        <td class="warning" align="center"><input type="checkbox" class="is_create" name="privileges[29][is_create]" value="1"></td>
+                        <td class="info" align="center"><input type="checkbox" class="is_read" name="privileges[29][is_read]" value="1"></td>									
+                        <td class="success" align="center"><input type="checkbox" class="is_edit" name="privileges[29][is_edit]" value="1"></td>
+                        <td class="danger" align="center"><input type="checkbox" class="is_delete" name="privileges[29][is_delete]" value="1"></td>
+                    </tr>
+                                                                                    <tr>
+                       
+                     </tbody>
+            </table>
 
+        </div>
 
+    </div><!-- /.box-body -->
+    <div class="box-footer" align="right">
+        <button type="button" onclick="location.href=''" class="btn btn-default">Cancelar</button>					
+        <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
+    </div><!-- /.box-footer-->
+</form>
             </div><!-- /.col -->
             <div class="col-sm-6">
               
@@ -430,11 +404,7 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-      <strong>Copyright &copy; 2020 <a href=""></a>.</strong>
-      All rights reserved.
-      <div class="float-right d-none d-sm-inline-block">
-        <b>Version</b> 3.0.5
-      </div>
+      
     </footer>
 
     <!-- Control Sidebar -->
