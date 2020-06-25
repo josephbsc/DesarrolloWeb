@@ -169,6 +169,12 @@ a:hover {
   text-decoration: none;
 }
 
+.select:hover{
+  color: #fd5f00;
+  text-decoration: none;
+}
+}
+]
 a:not([href]) {
   color: inherit;
   text-decoration: none;
