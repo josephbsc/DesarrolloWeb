@@ -322,18 +322,69 @@
       <div class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1 class="m-0 text-dark">Reporte de Profesores</h1>
-            </div><!-- /.col -->
-            <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-right">
+            <div class="col-sm-12">
+              <h1 class="m-0 text-dark">Reporte De Profesores</h1>
+             
+              <div class="text-center">
+                <select id="Sede">
+                  <option value="1">Sede 1</option>
+                  <option value="2">Sede 2</option>
+                  <option value="3">Sede 3</option>
+                </select>
+              </div>
+ <hr>
+              <div class="text-center">
+                <select id="Edificio">
+                  <option value="1">Edificio 1</option>
+                  <option value="2">Edificio 2</option>
+                  <option value="3">Edificio 3</option>
+                </select>
+              </div>
+        
+             
+            <hr>
 
+              <div class="text-center">
+                <select id="Materia">
+                  <option value="1">Materia 1</option>
+                  <option value="2">Materia 2</option>
+                  <option value="3">Materia 3</option>
+                </select>
+              
+              </div>
+              <hr>
+              <div class="text-center">
+              <button type="button" class="btn btn-info">Generar Reporte</button>
+            </div>
+        <hr>
 
-              </ol>
+      
+        <hr>
+
+              <div class="card card-info">
+                <div class="card-header">
+                  <h3 class="card-title">Grafico (Barras, linea,PDF , etc)</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                  </div>
+                </div>
+                <div class="card-body" style="display: block;">
+                  <div class="chart"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                    <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 289px;" width="867" height="750" class="chartjs-render-monitor"></canvas>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.container-fluid -->
+        </div>
             </div><!-- /.col -->
-          </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-      </div>
+
+            <hr>
+        
       <!-- /.content-header -->
 
       <!-- Main content -->
