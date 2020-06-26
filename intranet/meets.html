@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>GALÁPAGOS ACADEMY SCHOOL| Home</title>
+  <title>GALÁPAGOS ACADEMY SCHOOL| Calendar</title>
+  <link rel="icon" href="../images/Logo.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../../images/Logo.png" type="image/png" />
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
-  <link rel="icon" href="../images/Logo.png" type="image/png" />
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -28,11 +30,14 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./dist/css/calendar.css">
+  <link rel="stylesheet" type="text/css" href="./dist/css/calendar.css">
+  <link rel="stylesheet" href="./dist/css/calendar.js">
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
-
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       <!-- Left navbar links -->
@@ -56,7 +61,7 @@
           <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
 
             <div class="dropdown-divider"></div>
-            <a href="../login.html" class="dropdown-item dropdown-footer">Cerrar Sesion</a>
+            <a href="#" class="dropdown-item dropdown-footer">Cerrar Sesion</a>
           </div>
         </li>
 
@@ -65,6 +70,7 @@
 
     </nav>
     <!-- /.navbar -->
+
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -90,7 +96,7 @@
 
             <li class="nav-header">GESTIÓN DEL SISTEMA</li>
             <li class="nav-item">
-              <a href="calendar.html" class="nav-link">
+              <a href="calendar.html" class="nav-link active">
                 <i class="nav-icon far fa-calendar-alt"></i>
                 <p>
                   Calendario
@@ -186,11 +192,13 @@
               </ul>
             </li>
 
+
+
             <li class="nav-item has-treeview">
-              <a href="./notes_info.html" class="nav-link">
+              <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
-                  Información Educativa
+                  Gestión Académica
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
@@ -202,13 +210,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./notes_info.html" class="nav-link">
+                  <a href="score_total.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Calificaciones</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./homework_info.html" class="nav-link">
+                  <a href="pages/examples/project-edit.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Tareas</p>
                   </a>
@@ -217,10 +225,10 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="./notes.html" class="nav-link">
+              <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
-                  Manager Académico
+                  Calificaciones
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
@@ -228,40 +236,17 @@
                 <li class="nav-item">
                   <a href="./notes.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Registrar Calificaciones
+                    <p>Ingresar Calificación
                     </p>
                   </a>
                 </li>
-
-                <li class="nav-item">
-                  <a href="./attend_ges.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Registrar Asistencias</p>
-                  </a>
-                </li>
-            
-                <li class="nav-item">
-                  <a href="./homework.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Registrar Tareas</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./meets.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Reuniones  </p>
-                  </a>
-                </li>
-
-
-
               </ul>
             </li>
             <li class="nav-item has-treeview">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
-                  Gestión Institución
+                  Gestión Año Electivo
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
@@ -269,22 +254,15 @@
                 <li class="nav-item">
                 </li>
                 <li class="nav-item">
-                  <a href="./periodo.html" class="nav-link">
+                  <a href="pages/examples/projects.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Periodo</p>
+                    <p>uno</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="pages/examples/project-add.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Materias</p>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Asignación de Docentes</p>
+                    <p>dos</p>
                   </a>
                 </li>
 
@@ -305,21 +283,21 @@
                 <li class="nav-item">
                 </li>
                 <li class="nav-item">
-                  <a href="./report_student.html" class="nav-link">
+                  <a href="pages/examples/projects.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Reportes de Alumnos </p>
+                    <p>uno</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./report_teacher.html" class="nav-link">
+                  <a href="pages/examples/project-add.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Reportes de Profesores</p>
+                    <p>dos</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./report_infraestructure.html" class="nav-link">
+                  <a href="pages/examples/project-edit.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Reportes de Infraestructura</p>
+                    <p>tres</p>
                   </a>
                 </li>
 
@@ -336,6 +314,121 @@
       </div>
       <!-- /.sidebar -->
     </aside>
+    <br>
+    <div class="text-center" style="margin-left: 200px;">
+      <h3 class="m-0 text-dark text-center">PROGRAMACIÓN DE REUNIONES
+      </h3>
+    </div>
+
+    <div class="container" style="margin-left: 500px;">
+      <div class="calendar">
+        <div class="front">
+          <div class="current-date">
+            <h1>Viernes 15th</h1>
+            <h1>Junio 2020</h1>
+          </div>
+
+          <div class="current-month">
+            <ul class="week-days">
+              <li>LUN</li>
+              <li>MAR</li>
+              <li>MIE</li>
+              <li>JUE</li>
+              <li>VIE</li>
+              <li>SAB</li>
+              <li>DOM</li>
+            </ul>
+
+            <div class="weeks">
+              <div class="first">
+                <span class="last-month">28</span>
+                <span class="last-month">29</span>
+                <span class="last-month">30</span>
+                <span class="last-month">31</span>
+                <span>01</span>
+                <span>02</span>
+                <span>03</span>
+              </div>
+
+              <div class="second">
+                <span>04</span>
+                <span>05</span>
+                <span class="event">06</span>
+                <span>07</span>
+                <span>08</span>
+                <span>09</span>
+                <span>10</span>
+              </div>
+
+              <div class="third">
+                <span>11</span>
+                <span>12</span>
+                <span>13</span>
+                <span>14</span>
+                <span class="active">15</span>
+                <span>16</span>
+                <span>17</span>
+              </div>
+
+              <div class="fourth">
+                <span>18</span>
+                <span>19</span>
+                <span>20</span>
+                <span>21</span>
+                <span>22</span>
+                <span>23</span>
+                <span>24</span>
+              </div>
+
+              <div class="fifth">
+                <span>25</span>
+                <span>26</span>
+                <span>27</span>
+                <span>28</span>
+                <span>29</span>
+                <span>30</span>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="back">
+          <input placeholder="What's the event?">
+          <div class="info">
+            <div class="date">
+              <p class="info-date">
+                Date: <span>Jan 15th, 2016</span>
+              </p>
+              <p class="info-time">
+                Time: <span>6:35 PM</span>
+              </p>
+            </div>
+            <div class="address">
+              <p>
+                Address: <span>129 W 81st St, New York, NY</span>
+              </p>
+            </div>
+            <div class="observations">
+              <p>
+                Observations: <span>Be there 15 minutes earlier</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="save">
+              Save <i class="ion-checkmark"></i>
+            </button>
+            <button class="dismiss">
+              Dismiss <i class="ion-android-close"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -344,13 +437,14 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0 text-dark">Superusuario</h1>
+
+
+
             </div><!-- /.col -->
             <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-right">
 
 
-              </ol>
+
             </div><!-- /.col -->
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -358,90 +452,11 @@
       <!-- /.content-header -->
 
       <!-- Main content -->
-      <section class="content">
-        <div class="container-fluid">
-          <!-- Small boxes (Stat box) -->
-          <div class="row">
-            <div class="col-lg-3 col-6">
-              <!-- small box -->
-              <div class="small-box bg-info">
-                <div class="inner">
-                  <h3>150</h3>
 
-                  <p>DIRECTIVOS</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-bag"></i>
-                </div>
-                <a href="#" class="small-box-footer">Leer más <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-              <!-- small box -->
-              <div class="small-box bg-success">
-                <div class="inner">
-                  <h3>53<sup style="font-size: 20px"></sup></h3>
-
-                  <p>ALUMNOS</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-stats-bars"></i>
-                </div>
-                <a href="#" class="small-box-footer">Leer más <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-              <!-- small box -->
-              <div class="small-box bg-warning">
-                <div class="inner">
-                  <h3>44</h3>
-
-                  <p>Usuarios registrados</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-person-add"></i>
-                </div>
-                <a href="#" class="small-box-footer">Leer más <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-              <!-- small box -->
-              <div class="small-box bg-danger">
-                <div class="inner">
-                  <h3>65</h3>
-
-                  <p>Aspirantes</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-pie-graph"></i>
-                </div>
-                <a href="#" class="small-box-footer">Leer más <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-
-
-            <!-- ./col -->
-          </div>
-          <!-- /.row -->
-          <!-- Main row -->
-          <br><br>
-          <br><br>
-          <div style="text-align: center;"><img src="../images/portada.png" style="width: 400px;"></div>
-          <!-- /.row (main row) -->
-        </div><!-- /.container-fluid -->
-      </section>
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-    <footer class="main-footer">
 
-      <div class="float-right d-none d-sm-inline-block">
-        <b>Version</b> 3.0.5
-      </div>
-    </footer>
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
