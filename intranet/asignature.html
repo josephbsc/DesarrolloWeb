@@ -28,8 +28,6 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./dist/css/calendar.css">
-  <link rel="stylesheet" href="./dist/css/calendar.js">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -43,11 +41,8 @@
         </li>
       </ul>
 
-
-
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
-
         <!-- Notifications Dropdown Menu -->
         <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#">
@@ -63,15 +58,11 @@
 
       </ul>
     </nav>
-
     </nav>
     <!-- /.navbar -->
-
-
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-    
       <!-- Sidebar -->
       <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
@@ -101,7 +92,6 @@
                  </a>
                </li>
    
-   
                <li class="nav-item has-treeview menu-open">
                  <a href="#" class="nav-link active">
                    <i class="nav-icon fas fa-book"></i>
@@ -120,7 +110,7 @@
                    <li class="nav-item">
    
                    </li>
-                   <li class="nav-item">
+                   <li class="nav-item ">
                     <a href="./user.html" class="nav-link active">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Usuarios</p>
@@ -128,7 +118,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a href="./user.html" class="nav-link">
+                    <a href="./aspirants.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Aspirantes</p>
                     </a>
@@ -212,7 +202,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="pages/examples/project-edit.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Tareas</p>
                     </a>
@@ -250,13 +240,13 @@
                   <li class="nav-item">
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="pages/examples/projects.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>uno</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="pages/examples/project-add.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>dos</p>
                     </a>
@@ -279,30 +269,25 @@
                   <li class="nav-item">
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="pages/examples/projects.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>uno</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="pages/examples/project-add.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>dos</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="pages/examples/project-edit.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>tres</p>
                     </a>
                   </li>
-                  
-                
-  
                 </ul>
               </li>
-   
-  
              </ul>
            </nav>
    
@@ -312,124 +297,157 @@
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper text-center">
+    <div class="content-wrapper">
       <!-- Content Header (Page header) -->
       <div class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-12">
-              <h1 class="m-0 text-dark text-center">PERIODOS</h1>
+              <h1 class="m-0 text-dark">Materias</h1>
               <!-- PEGAR TABLA -->
+              <button type="button" onclick="location.href='./asignature_insert.html'" class="btn btn-default">Añadir</button>
+
+              <div class="card-body p-0">
+                <table class="table table-striped projects">
+                  <thead>
+                    <tr>
+                      <th>
+                        #
+                      </th>
+                      <th>
+                        Código
+                      </th>
+                      <th>
+                        Nombre
+                      </th>
+                      <th>
+                        Descripción
+                      </th>
+                     
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        <a>
+                          UI1516
+                        </a>
+                      </td>
+                      <td>
+                        <a>
+                          Matemáticas
+                        </a>
+                      </td>
+                      <td>
+                        <a>
+                          Ciencia exacta
+                        </a>
+                      </td>
+                      
+                    
+                      <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="./asignature_view.html">
+                          <i class="fas fa-folder">
+                          </i>
+                          Ver
+                        </a>
+                        <a class="btn btn-info btn-sm" href="./asignature_edit.html">
+                          <i class="fas fa-pencil-alt">
+                          </i>
+                          Editar
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                          <i class="fas fa-trash">
+                          </i>
+                          Eliminar
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        <a>
+                          UE1599
+                        </a>
+                      </td>
+                      <td>
+                        <a>
+                          Física
+                        </a>
+                      </td>
+                      <td>
+                        <a>
+                          Ciencia Exacta
+                        </a>
+                      </td>
+            
+                      <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="./user_view.html">
+                          <i class="fas fa-folder">
+                          </i>
+                          Ver
+                        </a>
+                        <a class="btn btn-info btn-sm" href="./user_edit.html">
+                          <i class="fas fa-pencil-alt">
+                          </i>
+                          Editar
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                          <i class="fas fa-trash">
+                          </i>
+                          Eliminar
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        3
+                      </td>
+                      <td>
+                        <a>
+                          UE1022
+                        </a>
+                      </td>
+                      <td>
+                        <a>
+                          Inglés
+                        </a>
+                      </td>
+                      <td>
+                        <a>
+                          Idiomas
+                        </a>
+                      </td>
+                    
+
+                      <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="./user_view.html">
+                          <i class="fas fa-folder">
+                          </i>
+                          Ver
+                        </a>
+                        <a class="btn btn-info btn-sm" href="./user_edit.html">
+                          <i class="fas fa-pencil-alt">
+                          </i>
+                          Editar
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                          <i class="fas fa-trash">
+                          </i>
+                          Eliminar
+                        </a>
+                      </td>
+                    </tr>
 
 
 
-              <div class="container" style="margin-left: 250px;">
-                <div class="calendar">
-                  <div class="front">
-                    <div class="current-date">
-                      <h1>Viernes 15th</h1>
-                      <h1>Junio 2020</h1>
-                    </div>
-          
-                    <div class="current-month">
-                      <ul class="week-days">
-                        <li>LUN</li>
-                        <li>MAR</li>
-                        <li>MIE</li>
-                        <li>JUE</li>
-                        <li>VIE</li>
-                        <li>SAB</li>
-                        <li>DOM</li>
-                      </ul>
-          
-                      <div class="weeks">
-                        <div class="first">
-                          <span class="last-month">28</span>
-                          <span class="last-month">29</span>
-                          <span class="last-month">30</span>
-                          <span class="last-month">31</span>
-                          <span>01</span>
-                          <span>02</span>
-                          <span>03</span>
-                        </div>
-          
-                        <div class="second">
-                          <span>04</span>
-                          <span>05</span>
-                          <span class="event">06</span>
-                          <span>07</span>
-                          <span>08</span>
-                          <span>09</span>
-                          <span>10</span>
-                        </div>
-          
-                        <div class="third">
-                          <span>11</span>
-                          <span>12</span>
-                          <span>13</span>
-                          <span>14</span>
-                          <span class="active">15</span>
-                          <span>16</span>
-                          <span>17</span>
-                        </div>
-          
-                        <div class="fourth">
-                          <span>18</span>
-                          <span>19</span>
-                          <span>20</span>
-                          <span>21</span>
-                          <span>22</span>
-                          <span>23</span>
-                          <span>24</span>
-                        </div>
-          
-                        <div class="fifth">
-                          <span>25</span>
-                          <span>26</span>
-                          <span>27</span>
-                          <span>28</span>
-                          <span>29</span>
-                          <span>30</span>
-                          <span>31</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <div class="back">
-                    <input placeholder="What's the event?">
-                    <div class="info">
-                      <div class="date">
-                        <p class="info-date">
-                          Date: <span>Jan 15th, 2016</span>
-                        </p>
-                        <p class="info-time">
-                          Time: <span>6:35 PM</span>
-                        </p>
-                      </div>
-                      <div class="address">
-                        <p>
-                          Address: <span>129 W 81st St, New York, NY</span>
-                        </p>
-                      </div>
-                      <div class="observations">
-                        <p>
-                          Observations: <span>Be there 15 minutes earlier</span>
-                        </p>
-                      </div>
-                    </div>
-          
-                    <div class="actions">
-                      <button class="save">
-                        Save <i class="ion-checkmark"></i>
-                      </button>
-                      <button class="dismiss">
-                        Dismiss <i class="ion-android-close"></i>
-                      </button>
-                    </div>
-                  </div>
-          
-                </div>
+                  </tbody>
+                </table>
               </div>
 
             </div><!-- /.col -->
@@ -449,7 +467,11 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-      
+      <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> 3.0.5
+      </div>
     </footer>
 
     <!-- Control Sidebar -->
